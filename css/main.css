@@ -21,9 +21,10 @@ body {
   nav ul li a {
     color: black;
     display: block;
-    line-height: 3em;
-    padding: 1em 3em;
+    line-height: 1em;
+    padding: 1em 1em;
     text-decoration: none;
+    font-size: 25px;
   }
   nav ul li:first-child {
     margin-right: auto;
