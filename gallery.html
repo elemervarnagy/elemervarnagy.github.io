@@ -20,17 +20,30 @@
         type="text/css">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+        <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/380c51e639.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-    <body>
-        <h1>Bigiribigas galéria</h1>
-
+    <nav>
+        <ul>
+            <li><a href="index.html" class="logo-img">
+                    <img src="./img/logo.png" height="100px" />
+                </a>
+            </li>
+            <li><a href="index.html">Főoldal</a>
+            </li>
+            <li><a href="gallery.html">Galéria</a>
+            </li>
+            <li><a href="#kapcsolat.html">Kapcsolat</a>
+            </li>
+        </ul>
+    </nav>
         <!-- ### start of the gallery definition ### -->
         <div id="nanogallery2" data-nanogallery2='{
-                  "thumbnailHeight":  200,
-                  "thumbnailWidth":   100,
+                  "thumbnailHeight":  800,
+                  "thumbnailWidth":   auto,
                   "itemsBaseURL":     ""
                 }'>
 
@@ -66,8 +79,22 @@
 
         </div>
         <!-- ### end of the gallery definition ### -->
-
-    </body>
+        <footer>
+            <section>
+                <div class="center">
+                    <div id="social-test">
+                        <h2>Elérhetőségeimet és további munkáimat az alábbi oldalakon tekintheted meg:</h2>
+                        <ul class="social">
+                            <li class="social-btn"><a href="https://www.facebook.com/search/top/?q=csillag%20%C3%A1rpart%20fotogr%C3%A1fia" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li class="social-btn"><a href="https://www.instagram.com/csillagarpart/?hl=en" class="fa fa-instagram" aria-hidden="true"></a></li>
+                        </ul>
+                        <h6>&copy; Csillag Arpart Fotográfia</h6>
+                    </div>
+                </div>
+                </div>
+    
+            </section>
+        </footer>
 </body>
 
 </html>
