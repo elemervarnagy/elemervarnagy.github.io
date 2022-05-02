@@ -22,7 +22,7 @@
         src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/380c51e639.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             </li>
         </ul>
     </nav>
-    <section>
+    <section class="background-img">
         <div class="container-1">
             <img src="./img/cover-img-1.jpg">
             <div class="centered-txt-1">csillag arpart fotográfia</div>
@@ -54,14 +54,25 @@
             <div class="centered-txt-2">-jegyes fotó-</div>
         </div>
     </section>
+    <button id="topBtn"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+    <script>
+        $(document).ready(function(){
+            $("#topBtn").click(function(){
+                $("html ,body").animate({scrollTop : 0},800);
+            });
+        });
+    </script>
     <footer>
         <section>
             <div class="center">
                 <div id="social-test">
                     <h2>Elérhetőségeimet és további munkáimat az alábbi oldalakon tekintheted meg:</h2>
                     <ul class="social">
-                        <li class="social-btn"><a href="https://www.facebook.com/search/top/?q=csillag%20%C3%A1rpart%20fotogr%C3%A1fia" class="fa fa-facebook" aria-hidden="true"></a></li>
-                        <li class="social-btn"><a href="https://www.instagram.com/csillagarpart/?hl=en" class="fa fa-instagram" aria-hidden="true"></a></li>
+                        <li class="social-btn"><a
+                                href="https://www.facebook.com/search/top/?q=csillag%20%C3%A1rpart%20fotogr%C3%A1fia"
+                                class="fa fa-facebook" aria-hidden="true"></a></li>
+                        <li class="social-btn"><a href="https://www.instagram.com/csillagarpart/?hl=en"
+                                class="fa fa-instagram" aria-hidden="true"></a></li>
                     </ul>
                     <h6>&copy; Csillag Arpart Fotográfia</h6>
                 </div>
